@@ -1,6 +1,6 @@
 *~
 data/[^f]*
 data/final/json.csv
-data/final/reserve[^\.]*
+data/final/reserve[^\-]*
 data/final/tableau*
 
