@@ -6,7 +6,7 @@ for (( i = 1 ; i < 11043 ; i++ )) do
   url="http://www2.assemblee-nationale.fr/reserve_parlementaire/reserve_parlementaire_detail_json?beneficiaire=$i"
   ct=0
   while [ $ct -lt 5 ] ; do
-    curl -s -L "$url" > "$i.json"
+    curl -f -s -L "$url" > "$i.json"
     size=$(cat "$i.json" | wc -c)
     if [ $size -gt 10 ]; then
       break
