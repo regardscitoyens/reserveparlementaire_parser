@@ -22,4 +22,4 @@ for (( i = 1 ; i < 11043 ; i++ )) do
   done
 done
 
-cd -
+cd ../..
